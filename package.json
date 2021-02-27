@@ -1,20 +1,23 @@
 {
-  "name": "test-nodejs",
+  "name": "jsbot",
   "version": "1.0.0",
   "description": "",
-  "main": "Show Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DenisDenis9331/test-nodejs.git"
+    "url": "git+https://github.com/devteamblabla/jsbot.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DenisDenis9331/test-nodejs/issues"
+    "url": "https://github.com/devteamblabla/jsbot/issues"
   },
-  "homepage": "https://github.com/DenisDenis9331/test-nodejs#readme",
+  "homepage": "https://github.com/devteamblabla/jsbot#readme",
   "dependencies": {
-    "htmlparser2": "^6.0.0",
-    "nodemon": "^2.0.7"
+    "cheerio": "^1.0.0-rc.5",
+    "request": "^2.88.2"
   }
 }
