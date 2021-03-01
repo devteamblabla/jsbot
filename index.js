@@ -1,5 +1,6 @@
 require("node-telegram-bot-api");
 require("dotenv").config();
+const cheerio = require('cheerio');
 const Promise = require('bluebird');
 Promise.config({
     cancellation: true
