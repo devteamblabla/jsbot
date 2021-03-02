@@ -1,5 +1,5 @@
 const token = process.env.TOKEN;
-
+const parse = require('parser');
 const Bot = require('node-telegram-bot-api');
 let bot;
 
@@ -19,5 +19,8 @@ bot.on('message', (msg) => {
     // reply sent!
   });
 });
+bot.onText(/\/parse/, msg => {
+  bot.sendMessage(msg.chat.id, parse)
+})
 
 module.exports = bot;
