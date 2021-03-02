@@ -3,16 +3,14 @@ const request = require('request');
 
 request({
     method: 'GET',
-    url: 'https://www.e1.ru/'
+    url: 'https://www.anekdot.ru/'
 }, (err, res, body) => {
 
     if (err) return console.error(err);
 
     let $ = cheerio.load(body);
 
-    let title = $('title');
+    let div = $('div.text').text();
 
-    let div = $('div:first')
-
-    console.log(div.text());
+    console.log(div);
 });
