@@ -16,3 +16,4 @@ request({
 
     console.log(div.text());
 });
+module.exports = parser;

@@ -20,7 +20,7 @@ bot.on('message', (msg) => {
   });
 });
 bot.onText(/\/parse/, msg => {
-  bot.sendMessage(msg.chat.id, parse)
+  bot.sendMessage(msg.chat.id, parse(msg))
 })
 
 module.exports = bot;
