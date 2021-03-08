@@ -1,5 +1,6 @@
 const cheerio = require('cheerio');
 const request = require('request');
+let parser;
 
 request({
     method: 'GET',
@@ -16,4 +17,5 @@ request({
 
     console.log(div.text());
 });
+
 module.exports = parser;
