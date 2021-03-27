@@ -15,6 +15,13 @@ console.log('Bot server started in the ' + process.env.NODE_ENV + ' mode');
 
 bot.on('message', (msg) => {
   const name = msg.from.first_name;
+  {
+    reply_markup: {
+      keyboard: [ ['1', '2'],
+        ['3']
+      ]
+    };
+  };
   bot.sendMessage(msg.chat.id, 'Hello, ' + name + '!').then(() => {
     // reply sent!
   });
